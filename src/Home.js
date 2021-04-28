@@ -63,7 +63,7 @@ class Home extends React.Component
                 MES AMIS ROBOTS
             </h1>
 
-            <div className="divInput">
+            <div className={Styles.searchContainer}>
             {this.isloading()} <input type="text" value={this.state.motif} onChange={this.handleChange} placeholder="Rechercher par un nom" onKeyUp={this.filter}/>
             </div>
             <div> 
