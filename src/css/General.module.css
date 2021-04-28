@@ -1,0 +1,151 @@
+@font-face {
+  font-family: SEGA;
+  src: url("../fonts/SEGA.TTF");
+  font-weight: bold;
+}
+body {
+  background: linear-gradient(60deg, #008080 40%, #072255 70%);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.container .listView {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container .listView .item {
+  height: 330px;
+  background-color: #9eebcf;
+  margin: 9px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 14px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.container .listView .item h2 {
+  margin-bottom: 1px;
+}
+.container .listView .item img {
+  width: 200px;
+}
+.container .listView .item:hover {
+  transform: scale(1.06);
+}
+
+h1 {
+  font-family: sega;
+  color: #0ccac4;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+input {
+  margin-bottom: 20px;
+  background-color: #cdecff;
+  padding: 15px 3px;
+  width: 190px;
+  border: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.divInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0;
+}
+
+@media all and (max-width: 789px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+  .container .listView {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container .listView .item {
+    height: 250px;
+    background-color: #9eebcf;
+    margin: 7px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 7px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .container .listView .item h2 {
+    margin-bottom: 0px;
+  }
+  .container .listView .item p {
+    margin: 0;
+  }
+  .container .listView .item img {
+    width: 80px;
+  }
+  .container .listView .item:hover {
+    transform: scale(1.03);
+  }
+
+  h1 {
+    font-family: sega;
+    color: #0ccac4;
+    font-size: 38px;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+
+  input {
+    margin-bottom: 20px;
+    background-color: #cdecff;
+    padding: 10px 3px;
+    width: 190px;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=General.module.css.map */
